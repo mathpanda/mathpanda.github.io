@@ -2051,21 +2051,21 @@ input, select, textarea {
 	.image {
 		border-radius: 5px;
 		border: 0;
-		display: inline-block;
-		position: relative;
+    position: relative;
 	}
 
 		.image[data-position] img {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
-			-ms-object-fit: cover;
+      -ms-object-fit: cover;
 			object-fit: cover;
 			display: block;
-			position: absolute;
+			/* position: absolute; */
 			top: 0;
 			left: 0;
-			width: 100%;
-			height: 100%;
+			width: 75%;
+      height: 100%;
+      max-width: 775px;
 		}
 
 		.image[data-position="top left"] img {
@@ -2199,8 +2199,9 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
-			height: 20em;
+      display: flex;
+      justify-content: center;
+			height: 24em;
 			border-radius: 0;
 		}
 
@@ -2948,7 +2949,11 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 12pt;
-			}
+      }
+      
+      section {
+        margin: 8px;
+      }
 
 		/* Image */
 
@@ -2961,7 +2966,8 @@ input, select, textarea {
 				}
 
 			.image.main {
-				height: 20em;
+        height: 22em;
+        /* width: 100%; */
 			}
 
 		/* Header */
@@ -3143,7 +3149,7 @@ input, select, textarea {
 			}
 
 			.image.main {
-				height: 12em;
+				height: 15em;
 			}
 
 		/* Section/Article */
